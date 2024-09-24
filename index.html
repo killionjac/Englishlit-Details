@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar_container">
+        <a href="#" id="navbar_logo">KSU EngLitt</a>
+        <div class="navbar_toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+          <li class="navbar_item">
+            <a href="index.html" class="navbar_links">Home</a>
+          </li>
+          <li class="navbar_item">
+            <a href="help.html" class="navbar_links">Help</a>
+
+          <li class="navbar_item">
+            <a href="contact.html" class="navbar_links">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <form method="post" action="details.php">
+        <h1>English Literature</h1>
+        <div class="input_box">
+          <input type="text" name="firstname" placeholder="Firstname" required>
+        </div>
+        <div class="input_box">
+          <input type="text" name="secondname" placeholder="Secondname" required>
+        </div>
+        <div class="input_box">
+          <input type="text" name="othernames" placeholder="Othernames">
+        </div>
+        <div class="input_box">
+          <input type="text" name="regno" placeholder="Registration Number" required>
+        </div>
+        <div class="input_box">
+          <input type="number" name="contact" placeholder="Contact" required><br>
+        </div>
+          <button type="submit" class="btn" name="button">Submit</button>
+      </form>
+    </div>
+    <script src="style.js"></script>
+  </body>
+</html>
